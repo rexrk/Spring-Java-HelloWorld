@@ -18,5 +18,10 @@ public class DemoApplication {
     public String helloSpring(@RequestParam(value = "myName", defaultValue = "World") String name) {
         return String.format("<h1> Hello %s ! </h1>", name);
     }
+    @GetMapping("/")
+    public String Hello(){
+        return "Hello";
+    }
+    // System.out.println("hello");
 
 }
